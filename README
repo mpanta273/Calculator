@@ -1,0 +1,64 @@
+/*
+ * Programmer: Manish Panta
+ * Programmer: Kushal Gautam
+ * NEDID     : mpanta
+ * NETID     : kgautam2
+ * OUTPUT
+ * 
+ */
+ 
+Our main class is called InfixCalculator. This project contains many additional files from the stack and queue labs 
+called LinkedList, Node,Queue, Stack, URLinkedList, URList, URNode, URQueue, and URStack.
+For the Shunting Yard algorithm, we have methods called checkDouble and checkoperator, which goes through the string
+ and determines if the character is an operand or operator.
+ 
+The final postfix expression is then saved in the queue, where it will go through our method called calc. It will
+ then take the postfix expression and perform the necessary operations
+to provide a singular answer.
+
+
+We made an input text file with infix expressions to run through our program called "textfile.txt". Our output 
+file which is generated after running the input file is called "Out.txt".
+
+//=========================================================================
+Running the file: 
+To run in the command line:
+Make sure that the text file located in inside src. 
+
+To run with Run Configuration: 
+Make sure that the text file is located outside the src.
+
+Currently we have the textfile.txt located in both locations. So it will work with Command line as well as run Configuration. 
+
+//=========================================================================
+EXTRA CREDIT: 
+Our program supports sin, cos, tan, modulus, and exponentiation. 
+Also, it can handle blank spaces in the input file. If there are blank spaces, it will ignore it. 
+
+For the trigonometric functions we have implemented the expression to be in parenthesis, please use parenthesis For example:
+Instead of: tan 70 + sin 40 + 1  write in the form of:
+(tan 70 + sin 40) + 1. We provided an example in the input file. 
+
+Also: write sin Instead of Sin or SIN. Same with Cos and Tan
+
+//ADDITIONAL TEST CASES INCLUDED 
+10 % 2
+10 % 4
+3 ^ 2
+3 ^ 3
+2 ^ 4 + 7 * 10
+(tan 70 + sin 40) + 1
+sin (2 * 3)
+(sin (10 * 20) + cos (30 + 40)) / 5.5
+
+OUTPUT:
+0.00
+2.00
+9.00
+27.00
+86.00
+2.97
+-0.28
+-0.04
+
+
